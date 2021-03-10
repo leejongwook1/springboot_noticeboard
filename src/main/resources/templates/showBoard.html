@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/js/modal.js"></script>
+	<title>board</title>
+</head>
+<body>
+	<div class="container">
+		<h2>게시판</h2>
+		글 번호 : <select class="" id="select_board"></select>
+		<table class="table table-bordered" id="board">
+			<thead>
+				<tr>
+					<th>no</th>
+					<th>제목</th>
+					<th>글</th>
+					<th>이름</th>
+					<th>작성 날짜</th>
+					<th>수정</th>
+					<th>삭제</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 id="modal-title" class="modal-title"></h4>
+					</div>
+					<div class="modal-body">
+						<table class="table" id="modal">
+							<tr>
+								<td>제목</td>
+								<td><input class="form-control" id="title" type="text"></td>
+							</tr>
+							<tr>
+								<td>글</td>
+								<td><textarea class="form-control" id="comment" rows="5"></textarea></td>
+							</tr>
+							<tr>
+								<td>이름</td>
+								<td><input class="form-control" id="name" type="text"></td>
+							</tr>
+						</table>
+					</div>
+					<div class="modal-footer">
+						<button id="modalSubmit" type="button" class="btn btn-success"></button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button id="createBtn" type="button" class="btn btn-info btn-sm" data-toggle="modal">글 작성</button>
+	</div>
+</body>
+</html> 

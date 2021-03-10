@@ -18,19 +18,24 @@ public class BoardServiceImpl implements BoardService {
 	public List<BoardDto> findAll(){
 		return boardMapper.findAll();
 	}
-
+	
 	@Override
-	public void insert(BoardDto board) {
-		boardMapper.insert(board);
+	public BoardDto findByNo(int no) {
+		return boardMapper.findByNo(no);
 	}
 
 	@Override
-	public void update(BoardDto board) {
-		boardMapper.update(board);
+	public int insert(BoardDto board) {
+		return boardMapper.insert(board);
 	}
 
 	@Override
-	public void delete(int no) {
-		boardMapper.delete(no);
+	public int update(BoardDto board) {
+		return boardMapper.update(board);
+	}
+
+	@Override
+	public int delete(int no) {
+		return boardMapper.delete(no);
 	}
 }
