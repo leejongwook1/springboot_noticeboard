@@ -1,65 +1,602 @@
-2021-03-10 15:57:54,358 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DemoApplication using Java 15.0.1 on DESKTOP-9Q3F4IE with PID 12008 (C:\Users\이종욱\OneDrive\문서\workspace\demo\target\classes started by 이종욱 in C:\Users\이종욱\OneDrive\문서\workspace\demo)
-2021-03-10 15:57:54,364 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-10 15:57:54,396 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-03-10 15:57:54,396 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-03-10 15:57:54,961 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$28f12436] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-03-10 15:57:54,987 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2021-03-10 15:57:55,203 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
-2021-03-10 15:57:55,211 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
-2021-03-10 15:57:55,211 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2021-03-10 15:57:55,212 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-03-10 15:57:55,363 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2021-03-10 15:57:55,370 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2021-03-10 15:57:55,370 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 973 ms
-2021-03-10 15:57:55,612 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
-2021-03-10 15:57:55,777 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2021-03-10 15:57:55,790 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
-2021-03-10 15:57:55,814 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
-2021-03-10 15:57:55,822 INFO o.s.b.StartupInfoLogger [restartedMain] Started DemoApplication in 1.731 seconds (JVM running for 2.516)
-2021-03-10 16:01:24,369 INFO o.a.j.l.DirectJDKLog [http-nio-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-03-10 16:01:24,369 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Initializing Servlet 'dispatcherServlet'
-2021-03-10 16:01:24,370 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Completed initialization in 1 ms
-2021-03-10 16:01:24,389 INFO c.e.c.BoardController [http-nio-8000-exec-1] GET /INFO : 5
-2021-03-10 16:01:24,389 WARN c.e.c.BoardController [http-nio-8000-exec-1] GET /WARN : 5
-2021-03-10 16:01:24,404 INFO c.z.h.HikariDataSource [http-nio-8000-exec-1] HikariPool-1 - Starting...
-2021-03-10 16:01:24,593 INFO c.z.h.HikariDataSource [http-nio-8000-exec-1] HikariPool-1 - Start completed.
-2021-03-10 16:01:31,625 INFO c.e.c.BoardController [http-nio-8000-exec-4] GET /INFO : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
-2021-03-10 16:01:31,626 WARN c.e.c.BoardController [http-nio-8000-exec-4] GET /WARN : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
-2021-03-10 16:01:35,587 INFO c.e.c.BoardController [http-nio-8000-exec-3] GET /INFO : 2
-2021-03-10 16:01:35,587 WARN c.e.c.BoardController [http-nio-8000-exec-3] GET /WARN : 2
-2021-03-10 16:01:38,657 INFO c.e.c.BoardController [http-nio-8000-exec-6] GET /INFO : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
-2021-03-10 16:01:38,658 WARN c.e.c.BoardController [http-nio-8000-exec-6] GET /WARN : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
-2021-03-10 16:11:04,993 INFO c.e.c.BoardController [http-nio-8000-exec-1] GET /INFO : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
-2021-03-10 16:11:04,993 WARN c.e.c.BoardController [http-nio-8000-exec-1] GET /WARN : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
-2021-03-10 16:14:00,227 INFO c.e.c.BoardController [http-nio-8000-exec-6] GET /INFO : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
-2021-03-10 16:14:00,227 WARN c.e.c.BoardController [http-nio-8000-exec-6] GET /WARN : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
-2021-03-10 16:14:47,463 INFO c.e.c.BoardController [http-nio-8000-exec-1] GET /INFO : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
-2021-03-10 16:14:47,463 WARN c.e.c.BoardController [http-nio-8000-exec-1] GET /WARN : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
-2021-03-10 16:15:09,606 INFO c.e.c.BoardController [http-nio-8000-exec-2] PUT /INFO : BoardDto(no=1, title=안녕!, comment=좋은 날, name=null, date=2021-03-10)
-2021-03-10 16:15:09,607 WARN c.e.c.BoardController [http-nio-8000-exec-2] PUT /WARN : BoardDto(no=1, title=안녕!, comment=좋은 날, name=null, date=2021-03-10)
-2021-03-10 16:15:10,661 INFO c.e.c.BoardController [http-nio-8000-exec-3] GET /INFO : [{"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}, {"no": 1, "title": "안녕!", "comment": "좋은 날", "name": "이종욱", "date": "2021-03-10"}]
-2021-03-10 16:15:10,662 WARN c.e.c.BoardController [http-nio-8000-exec-3] GET /WARN : [{"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}, {"no": 1, "title": "안녕!", "comment": "좋은 날", "name": "이종욱", "date": "2021-03-10"}]
-2021-03-10 16:16:17,032 INFO c.e.c.BoardController [http-nio-8000-exec-9] GET /INFO : [{"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}, {"no": 1, "title": "안녕!", "comment": "좋은 날", "name": "이종욱", "date": "2021-03-10"}]
-2021-03-10 16:16:17,032 WARN c.e.c.BoardController [http-nio-8000-exec-9] GET /WARN : [{"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}, {"no": 1, "title": "안녕!", "comment": "좋은 날", "name": "이종욱", "date": "2021-03-10"}]
-2021-03-10 16:16:19,945 INFO c.e.c.BoardController [http-nio-8000-exec-10] DELETE /INFO : 1
-2021-03-10 16:16:19,945 WARN c.e.c.BoardController [http-nio-8000-exec-10] DELETE /WARN : 1
-2021-03-10 16:16:38,522 INFO c.e.c.BoardController [http-nio-8000-exec-2] GET /INFO : [{"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
-2021-03-10 16:16:38,523 WARN c.e.c.BoardController [http-nio-8000-exec-2] GET /WARN : [{"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
-2021-03-10 16:16:41,187 INFO c.e.c.BoardController [http-nio-8000-exec-4] DELETE /INFO : 3
-2021-03-10 16:16:41,187 WARN c.e.c.BoardController [http-nio-8000-exec-4] DELETE /WARN : 3
-2021-03-10 16:16:50,129 INFO c.e.c.BoardController [http-nio-8000-exec-7] GET /INFO : [{"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}]
-2021-03-10 16:16:50,129 WARN c.e.c.BoardController [http-nio-8000-exec-7] GET /WARN : [{"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}]
-2021-03-10 16:16:52,703 INFO c.e.c.BoardController [http-nio-8000-exec-9] DELETE /INFO : 2
-2021-03-10 16:16:52,703 WARN c.e.c.BoardController [http-nio-8000-exec-9] DELETE /WARN : 2
-2021-03-10 16:16:53,358 INFO c.e.c.BoardController [http-nio-8000-exec-1] GET /INFO : [
-2021-03-10 16:16:53,358 WARN c.e.c.BoardController [http-nio-8000-exec-1] GET /WARN : [
-2021-03-10 16:18:37,318 INFO c.e.c.BoardController [http-nio-8000-exec-6] GET /INFO : [
-2021-03-10 16:18:37,318 WARN c.e.c.BoardController [http-nio-8000-exec-6] GET /WARN : [
-2021-03-10 16:20:40,603 INFO c.e.c.BoardController [http-nio-8000-exec-1] GET /INFO : [
-2021-03-10 16:20:40,604 WARN c.e.c.BoardController [http-nio-8000-exec-1] GET /WARN : [
-2021-03-10 16:36:44,737 INFO c.e.c.BoardController [http-nio-8000-exec-6] GET /INFO : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
-2021-03-10 16:36:44,737 WARN c.e.c.BoardController [http-nio-8000-exec-6] GET /WARN : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
-2021-03-10 16:40:27,649 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(48)-127.0.0.1] Application shutdown requested.
-2021-03-10 16:40:27,683 INFO o.s.s.c.ExecutorConfigurationSupport [RMI TCP Connection(48)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
-2021-03-10 16:40:27,684 INFO c.z.h.HikariDataSource [RMI TCP Connection(48)-127.0.0.1] HikariPool-1 - Shutdown initiated...
-2021-03-10 16:40:27,687 INFO c.z.h.HikariDataSource [RMI TCP Connection(48)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-03-12 15:23:50,964 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DemoApplication using Java 15.0.1 on DESKTOP-9Q3F4IE with PID 6820 (C:\Users\이종욱\OneDrive\문서\workspace\demo\target\classes started by 이종욱 in C:\Users\이종욱\OneDrive\문서\workspace\demo)
+2021-03-12 15:23:50,969 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 15:23:51,001 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-12 15:23:51,001 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-12 15:23:51,566 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$63b667c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-12 15:23:51,591 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-03-12 15:23:51,791 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2021-03-12 15:23:51,799 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2021-03-12 15:23:51,799 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 15:23:51,799 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 15:23:51,955 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-03-12 15:23:51,964 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 15:23:51,964 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 960 ms
+2021-03-12 15:23:52,221 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 15:23:52,406 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 15:23:52,419 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2021-03-12 15:23:52,442 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2021-03-12 15:23:52,450 INFO o.s.b.StartupInfoLogger [restartedMain] Started DemoApplication in 1.734 seconds (JVM running for 2.473)
+2021-03-12 15:26:16,074 INFO o.a.j.l.DirectJDKLog [http-nio-8000-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 15:26:16,074 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-03-12 15:26:16,075 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-2] Completed initialization in 1 ms
+2021-03-12 15:26:16,084 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor preHandle
+2021-03-12 15:26:16,102 INFO c.z.h.HikariDataSource [http-nio-8000-exec-2] HikariPool-1 - Starting...
+2021-03-12 15:26:16,187 INFO c.z.h.HikariDataSource [http-nio-8000-exec-2] HikariPool-1 - Start completed.
+2021-03-12 15:26:16,213 INFO c.e.c.BoardController [http-nio-8000-exec-2] GET /INFO : [BoardDto(no=1, title=안녕하세요, comment=좋은 아침입니다, name=이종욱, date=2021-03-07), BoardDto(no=2, title=hi~!!, comment=have a nice day!, name=김진, date=2021-03-07), BoardDto(no=3, title=안녕하십니까, comment=하루 잘 보내세요, name=이진, date=2021-03-08)]
+2021-03-12 15:26:16,214 WARN c.e.c.BoardController [http-nio-8000-exec-2] GET /WARN : [BoardDto(no=1, title=안녕하세요, comment=좋은 아침입니다, name=이종욱, date=2021-03-07), BoardDto(no=2, title=hi~!!, comment=have a nice day!, name=김진, date=2021-03-07), BoardDto(no=3, title=안녕하십니까, comment=하루 잘 보내세요, name=이진, date=2021-03-08)]
+2021-03-12 15:26:16,259 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor postHandle
+2021-03-12 15:46:41,505 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-5] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 15:46:41,505 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2021-03-12 15:46:41,507 INFO c.z.h.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2021-03-12 15:46:41,581 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DemoApplication using Java 15.0.1 on DESKTOP-9Q3F4IE with PID 6820 (C:\Users\이종욱\OneDrive\문서\workspace\demo\target\classes started by 이종욱 in C:\Users\이종욱\OneDrive\문서\workspace\demo)
+2021-03-12 15:46:41,582 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 15:46:41,732 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$63b667c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-12 15:46:41,733 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-03-12 15:46:41,761 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2021-03-12 15:46:41,762 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2021-03-12 15:46:41,762 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 15:46:41,762 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 15:46:41,813 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-03-12 15:46:41,815 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 15:46:41,815 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 231 ms
+2021-03-12 15:46:41,872 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 15:46:41,920 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 15:46:41,927 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2021-03-12 15:46:41,930 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2021-03-12 15:46:41,933 INFO o.s.b.StartupInfoLogger [restartedMain] Started DemoApplication in 0.391 seconds (JVM running for 1371.956)
+2021-03-12 15:46:41,934 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 15:59:34,662 INFO o.a.j.l.DirectJDKLog [http-nio-8000-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 15:59:34,662 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-3] Initializing Servlet 'dispatcherServlet'
+2021-03-12 15:59:34,662 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-3] Completed initialization in 0 ms
+2021-03-12 15:59:34,663 INFO c.e.i.MyInterceptor [http-nio-8000-exec-3] Interceptor preHandle
+2021-03-12 15:59:34,664 INFO c.e.i.MyInterceptor [http-nio-8000-exec-3] Interceptor postHandle
+2021-03-12 15:59:34,672 INFO c.e.i.MyInterceptor [http-nio-8000-exec-3] Interceptor preHandle
+2021-03-12 15:59:34,674 INFO c.e.i.MyInterceptor [http-nio-8000-exec-3] Interceptor postHandle
+2021-03-12 15:59:56,871 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor preHandle
+2021-03-12 15:59:56,872 INFO c.z.h.HikariDataSource [http-nio-8000-exec-2] HikariPool-2 - Starting...
+2021-03-12 15:59:56,903 INFO c.z.h.HikariDataSource [http-nio-8000-exec-2] HikariPool-2 - Start completed.
+2021-03-12 15:59:56,905 INFO c.e.c.BoardController [http-nio-8000-exec-2] GET /INFO : [BoardDto(no=1, title=안녕하세요, comment=좋은 아침입니다, name=이종욱, date=2021-03-07), BoardDto(no=2, title=hi~!!, comment=have a nice day!, name=김진, date=2021-03-07), BoardDto(no=3, title=안녕하십니까, comment=하루 잘 보내세요, name=이진, date=2021-03-08)]
+2021-03-12 15:59:56,907 WARN c.e.c.BoardController [http-nio-8000-exec-2] GET /WARN : [BoardDto(no=1, title=안녕하세요, comment=좋은 아침입니다, name=이종욱, date=2021-03-07), BoardDto(no=2, title=hi~!!, comment=have a nice day!, name=김진, date=2021-03-07), BoardDto(no=3, title=안녕하십니까, comment=하루 잘 보내세요, name=이진, date=2021-03-08)]
+2021-03-12 15:59:56,910 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor postHandle
+2021-03-12 16:03:36,126 INFO c.e.i.MyInterceptor [http-nio-8000-exec-5] Interceptor preHandle
+2021-03-12 16:03:36,127 INFO c.e.i.MyInterceptor [http-nio-8000-exec-5] Interceptor postHandle
+2021-03-12 16:03:36,128 INFO c.e.i.MyInterceptor [http-nio-8000-exec-5] Interceptor preHandle
+2021-03-12 16:03:36,130 INFO c.e.c.CustomErrorController [http-nio-8000-exec-5] httpStatus:404 NOT_FOUND
+2021-03-12 16:03:36,131 INFO c.e.i.MyInterceptor [http-nio-8000-exec-5] Interceptor postHandle
+2021-03-12 16:05:30,174 INFO c.e.i.MyInterceptor [http-nio-8000-exec-9] Interceptor preHandle
+2021-03-12 16:05:30,175 INFO c.e.c.BoardController [http-nio-8000-exec-9] GET /INFO : BoardVo(boardVo=[BoardDto(no=1, title=안녕하세요, comment=좋은 아침입니다, name=이종욱, date=2021-03-07), BoardDto(no=2, title=hi~!!, comment=have a nice day!, name=김진, date=2021-03-07), BoardDto(no=3, title=안녕하십니까, comment=하루 잘 보내세요, name=이진, date=2021-03-08)], message=null, error=null)
+2021-03-12 16:05:30,175 WARN c.e.c.BoardController [http-nio-8000-exec-9] GET /WARN : BoardVo(boardVo=[BoardDto(no=1, title=안녕하세요, comment=좋은 아침입니다, name=이종욱, date=2021-03-07), BoardDto(no=2, title=hi~!!, comment=have a nice day!, name=김진, date=2021-03-07), BoardDto(no=3, title=안녕하십니까, comment=하루 잘 보내세요, name=이진, date=2021-03-08)], message=null, error=null)
+2021-03-12 16:05:30,177 INFO c.e.i.MyInterceptor [http-nio-8000-exec-9] Interceptor postHandle
+2021-03-12 16:11:59,867 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:11:59,868 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:11:59,869 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:11:59,870 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:11:59,881 INFO c.e.i.MyInterceptor [http-nio-8000-exec-3] Interceptor preHandle
+2021-03-12 16:11:59,883 INFO c.e.i.MyInterceptor [http-nio-8000-exec-3] Interceptor postHandle
+2021-03-12 16:12:02,165 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor preHandle
+2021-03-12 16:12:02,167 INFO c.e.c.BoardController [http-nio-8000-exec-2] GET /INFO : BoardVo(boardVo=[BoardDto(no=1, title=안녕하세요, comment=좋은 아침입니다, name=이종욱, date=2021-03-07), BoardDto(no=2, title=hi~!!, comment=have a nice day!, name=김진, date=2021-03-07), BoardDto(no=3, title=안녕하십니까, comment=하루 잘 보내세요, name=이진, date=2021-03-08)], message=null, error=null)
+2021-03-12 16:12:02,167 WARN c.e.c.BoardController [http-nio-8000-exec-2] GET /WARN : BoardVo(boardVo=[BoardDto(no=1, title=안녕하세요, comment=좋은 아침입니다, name=이종욱, date=2021-03-07), BoardDto(no=2, title=hi~!!, comment=have a nice day!, name=김진, date=2021-03-07), BoardDto(no=3, title=안녕하십니까, comment=하루 잘 보내세요, name=이진, date=2021-03-08)], message=null, error=null)
+2021-03-12 16:12:02,168 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor postHandle
+2021-03-12 16:25:41,521 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-9] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:25:41,521 INFO c.z.h.HikariDataSource [Thread-9] HikariPool-2 - Shutdown initiated...
+2021-03-12 16:25:41,522 INFO c.z.h.HikariDataSource [Thread-9] HikariPool-2 - Shutdown completed.
+2021-03-12 16:25:41,596 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DemoApplication using Java 15.0.1 on DESKTOP-9Q3F4IE with PID 6820 (C:\Users\이종욱\OneDrive\문서\workspace\demo\target\classes started by 이종욱 in C:\Users\이종욱\OneDrive\문서\workspace\demo)
+2021-03-12 16:25:41,596 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 16:25:41,750 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$63b667c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-12 16:25:41,752 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-03-12 16:25:41,777 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2021-03-12 16:25:41,778 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:25:41,778 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 16:25:41,778 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 16:25:41,826 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-03-12 16:25:41,828 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 16:25:41,828 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 229 ms
+2021-03-12 16:25:41,883 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:25:41,929 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 16:25:41,935 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:25:41,938 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2021-03-12 16:25:41,940 INFO o.s.b.StartupInfoLogger [restartedMain] Started DemoApplication in 0.379 seconds (JVM running for 3711.964)
+2021-03-12 16:25:41,942 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 16:25:42,641 INFO o.a.j.l.DirectJDKLog [http-nio-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 16:25:42,641 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-12 16:25:42,642 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Completed initialization in 1 ms
+2021-03-12 16:25:42,642 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:25:42,643 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:25:42,643 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:25:42,644 INFO c.e.c.CustomErrorController [http-nio-8000-exec-1] httpStatus:404 NOT_FOUND
+2021-03-12 16:25:42,644 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:28:37,804 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-15] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:28:37,867 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DemoApplication using Java 15.0.1 on DESKTOP-9Q3F4IE with PID 6820 (C:\Users\이종욱\OneDrive\문서\workspace\demo\target\classes started by 이종욱 in C:\Users\이종욱\OneDrive\문서\workspace\demo)
+2021-03-12 16:28:37,868 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 16:28:38,006 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$63b667c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-12 16:28:38,007 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-03-12 16:28:38,031 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2021-03-12 16:28:38,032 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:28:38,032 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 16:28:38,032 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 16:28:38,075 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-03-12 16:28:38,077 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 16:28:38,077 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 208 ms
+2021-03-12 16:28:38,125 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:28:38,166 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 16:28:38,172 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:28:38,174 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2021-03-12 16:28:38,177 INFO o.s.b.StartupInfoLogger [restartedMain] Started DemoApplication in 0.341 seconds (JVM running for 3888.2)
+2021-03-12 16:28:38,178 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 16:28:38,798 INFO o.a.j.l.DirectJDKLog [http-nio-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 16:28:38,798 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-12 16:28:38,799 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Completed initialization in 1 ms
+2021-03-12 16:28:38,799 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:28:38,800 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:28:38,801 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:28:38,801 INFO c.e.c.CustomErrorController [http-nio-8000-exec-1] httpStatus:404 NOT_FOUND
+2021-03-12 16:28:38,802 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:28:40,636 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor preHandle
+2021-03-12 16:28:40,636 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor postHandle
+2021-03-12 16:28:40,636 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor preHandle
+2021-03-12 16:28:40,637 INFO c.e.c.CustomErrorController [http-nio-8000-exec-2] httpStatus:404 NOT_FOUND
+2021-03-12 16:28:40,637 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor postHandle
+2021-03-12 16:30:44,327 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-20] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:30:44,399 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DemoApplication using Java 15.0.1 on DESKTOP-9Q3F4IE with PID 6820 (C:\Users\이종욱\OneDrive\문서\workspace\demo\target\classes started by 이종욱 in C:\Users\이종욱\OneDrive\문서\workspace\demo)
+2021-03-12 16:30:44,400 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 16:30:44,530 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$63b667c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-12 16:30:44,531 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-03-12 16:30:44,557 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2021-03-12 16:30:44,557 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:30:44,558 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 16:30:44,558 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 16:30:44,602 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-03-12 16:30:44,605 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 16:30:44,605 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 204 ms
+2021-03-12 16:30:44,653 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:30:44,693 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 16:30:44,698 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:30:44,702 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2021-03-12 16:30:44,705 INFO o.s.b.StartupInfoLogger [restartedMain] Started DemoApplication in 0.339 seconds (JVM running for 4014.728)
+2021-03-12 16:30:44,706 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 16:30:44,837 INFO o.a.j.l.DirectJDKLog [http-nio-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 16:30:44,837 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-12 16:30:44,838 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Completed initialization in 0 ms
+2021-03-12 16:30:44,838 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:30:44,839 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:30:44,840 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:30:44,840 INFO c.e.c.CustomErrorController [http-nio-8000-exec-1] httpStatus:404 NOT_FOUND
+2021-03-12 16:30:44,841 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:34:22,555 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-25] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:34:22,624 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DemoApplication using Java 15.0.1 on DESKTOP-9Q3F4IE with PID 6820 (C:\Users\이종욱\OneDrive\문서\workspace\demo\target\classes started by 이종욱 in C:\Users\이종욱\OneDrive\문서\workspace\demo)
+2021-03-12 16:34:22,625 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 16:34:22,741 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$63b667c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-12 16:34:22,742 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-03-12 16:34:22,768 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2021-03-12 16:34:22,768 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:34:22,768 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 16:34:22,768 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 16:34:22,812 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-03-12 16:34:22,813 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 16:34:22,813 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 186 ms
+2021-03-12 16:34:22,858 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:34:22,897 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 16:34:22,903 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:34:22,907 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2021-03-12 16:34:22,909 INFO o.s.b.StartupInfoLogger [restartedMain] Started DemoApplication in 0.316 seconds (JVM running for 4232.932)
+2021-03-12 16:34:22,910 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 16:34:23,054 INFO o.a.j.l.DirectJDKLog [http-nio-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 16:34:23,054 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-12 16:34:23,055 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Completed initialization in 0 ms
+2021-03-12 16:34:23,055 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:34:23,056 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:34:23,056 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:34:23,057 INFO c.e.c.CustomErrorController [http-nio-8000-exec-1] httpStatus:404 NOT_FOUND
+2021-03-12 16:34:23,057 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:35:20,470 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-30] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:35:20,539 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DemoApplication using Java 15.0.1 on DESKTOP-9Q3F4IE with PID 6820 (C:\Users\이종욱\OneDrive\문서\workspace\demo\target\classes started by 이종욱 in C:\Users\이종욱\OneDrive\문서\workspace\demo)
+2021-03-12 16:35:20,540 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 16:35:20,661 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$63b667c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-12 16:35:20,663 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-03-12 16:35:20,686 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2021-03-12 16:35:20,686 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:35:20,686 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 16:35:20,686 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 16:35:20,729 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-03-12 16:35:20,730 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 16:35:20,730 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 189 ms
+2021-03-12 16:35:20,777 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:35:20,816 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 16:35:20,821 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:35:20,825 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2021-03-12 16:35:20,828 INFO o.s.b.StartupInfoLogger [restartedMain] Started DemoApplication in 0.32 seconds (JVM running for 4290.851)
+2021-03-12 16:35:20,829 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 16:35:20,879 INFO o.a.j.l.DirectJDKLog [http-nio-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 16:35:20,880 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-12 16:35:20,880 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Completed initialization in 0 ms
+2021-03-12 16:35:20,881 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:35:20,881 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:35:20,882 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:35:20,882 INFO c.e.c.CustomErrorController [http-nio-8000-exec-1] httpStatus:404 NOT_FOUND
+2021-03-12 16:35:20,884 ERROR o.a.j.l.DirectJDKLog [http-nio-8000-exec-1] Servlet.service() for servlet [dispatcherServlet] threw exception
+java.lang.IllegalArgumentException: No enum constant org.springframework.http.HttpStatus./error
+	at java.lang.Enum.valueOf(Enum.java:273) ~[?:?]
+	at org.springframework.http.HttpStatus.valueOf(HttpStatus.java:34) ~[spring-web-5.3.4.jar:5.3.4]
+	at com.example.controller.CustomErrorController.handleError(CustomErrorController.java:32) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:710) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:179) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-03-12 16:35:20,891 ERROR o.a.j.l.DirectJDKLog [http-nio-8000-exec-1] Exception Processing ErrorPage[errorCode=0, location=/error]
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalArgumentException: No enum constant org.springframework.http.HttpStatus./error
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.43.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:103) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:710) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312) ~[tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:398) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:257) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:179) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:887) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1684) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.43.jar:9.0.43]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+Caused by: java.lang.IllegalArgumentException: No enum constant org.springframework.http.HttpStatus./error
+	at java.lang.Enum.valueOf(Enum.java:273) ~[?:?]
+	at org.springframework.http.HttpStatus.valueOf(HttpStatus.java:34) ~[spring-web-5.3.4.jar:5.3.4]
+	at com.example.controller.CustomErrorController.handleError(CustomErrorController.java:32) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.4.jar:5.3.4]
+	... 35 more
+2021-03-12 16:36:03,091 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-35] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:36:03,157 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DemoApplication using Java 15.0.1 on DESKTOP-9Q3F4IE with PID 6820 (C:\Users\이종욱\OneDrive\문서\workspace\demo\target\classes started by 이종욱 in C:\Users\이종욱\OneDrive\문서\workspace\demo)
+2021-03-12 16:36:03,157 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 16:36:03,277 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$63b667c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-12 16:36:03,278 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-03-12 16:36:03,301 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2021-03-12 16:36:03,302 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:36:03,302 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 16:36:03,302 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 16:36:03,343 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-03-12 16:36:03,345 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 16:36:03,345 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 186 ms
+2021-03-12 16:36:03,390 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:36:03,428 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 16:36:03,434 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:36:03,437 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2021-03-12 16:36:03,440 INFO o.s.b.StartupInfoLogger [restartedMain] Started DemoApplication in 0.312 seconds (JVM running for 4333.463)
+2021-03-12 16:36:03,441 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 16:36:04,842 INFO o.a.j.l.DirectJDKLog [http-nio-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 16:36:04,842 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-12 16:36:04,843 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Completed initialization in 1 ms
+2021-03-12 16:36:04,843 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:36:04,844 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:36:04,844 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:36:04,845 INFO c.e.c.CustomErrorController [http-nio-8000-exec-1] httpStatus:404 NOT_FOUND
+2021-03-12 16:36:04,846 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:36:40,599 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-40] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:36:40,669 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DemoApplication using Java 15.0.1 on DESKTOP-9Q3F4IE with PID 6820 (C:\Users\이종욱\OneDrive\문서\workspace\demo\target\classes started by 이종욱 in C:\Users\이종욱\OneDrive\문서\workspace\demo)
+2021-03-12 16:36:40,670 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 16:36:40,788 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$63b667c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-12 16:36:40,789 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-03-12 16:36:40,811 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2021-03-12 16:36:40,812 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:36:40,812 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 16:36:40,812 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 16:36:40,854 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-03-12 16:36:40,855 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 16:36:40,855 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 184 ms
+2021-03-12 16:36:40,899 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:36:40,938 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 16:36:40,943 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:36:40,947 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2021-03-12 16:36:40,950 INFO o.s.b.StartupInfoLogger [restartedMain] Started DemoApplication in 0.311 seconds (JVM running for 4370.973)
+2021-03-12 16:36:40,951 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 16:36:47,484 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-45] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:36:47,552 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DemoApplication using Java 15.0.1 on DESKTOP-9Q3F4IE with PID 6820 (C:\Users\이종욱\OneDrive\문서\workspace\demo\target\classes started by 이종욱 in C:\Users\이종욱\OneDrive\문서\workspace\demo)
+2021-03-12 16:36:47,552 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 16:36:47,685 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$63b667c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-12 16:36:47,686 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-03-12 16:36:47,708 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2021-03-12 16:36:47,708 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:36:47,709 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 16:36:47,709 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 16:36:47,751 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-03-12 16:36:47,752 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 16:36:47,752 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 198 ms
+2021-03-12 16:36:47,801 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:36:47,844 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 16:36:47,850 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:36:47,853 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2021-03-12 16:36:47,855 INFO o.s.b.StartupInfoLogger [restartedMain] Started DemoApplication in 0.333 seconds (JVM running for 4377.879)
+2021-03-12 16:36:47,857 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 16:36:50,873 INFO o.a.j.l.DirectJDKLog [http-nio-8000-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 16:36:50,873 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-3] Initializing Servlet 'dispatcherServlet'
+2021-03-12 16:36:50,874 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-3] Completed initialization in 1 ms
+2021-03-12 16:36:50,874 INFO c.e.i.MyInterceptor [http-nio-8000-exec-3] Interceptor preHandle
+2021-03-12 16:36:50,875 INFO c.e.i.MyInterceptor [http-nio-8000-exec-3] Interceptor postHandle
+2021-03-12 16:36:50,875 INFO c.e.i.MyInterceptor [http-nio-8000-exec-3] Interceptor preHandle
+2021-03-12 16:36:50,876 INFO c.e.c.CustomErrorController [http-nio-8000-exec-3] httpStatus:404 NOT_FOUND
+2021-03-12 16:36:50,876 INFO c.e.i.MyInterceptor [http-nio-8000-exec-3] Interceptor postHandle
+2021-03-12 16:37:19,906 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-50] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:37:19,975 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DemoApplication using Java 15.0.1 on DESKTOP-9Q3F4IE with PID 6820 (C:\Users\이종욱\OneDrive\문서\workspace\demo\target\classes started by 이종욱 in C:\Users\이종욱\OneDrive\문서\workspace\demo)
+2021-03-12 16:37:19,976 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 16:37:20,113 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$63b667c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-12 16:37:20,115 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-03-12 16:37:20,143 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2021-03-12 16:37:20,143 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:37:20,144 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 16:37:20,144 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 16:37:20,187 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-03-12 16:37:20,189 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 16:37:20,189 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 212 ms
+2021-03-12 16:37:20,239 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:37:20,277 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 16:37:20,282 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:37:20,285 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2021-03-12 16:37:20,288 INFO o.s.b.StartupInfoLogger [restartedMain] Started DemoApplication in 0.342 seconds (JVM running for 4410.311)
+2021-03-12 16:37:20,289 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 16:37:21,272 INFO o.a.j.l.DirectJDKLog [http-nio-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 16:37:21,272 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-12 16:37:21,273 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Completed initialization in 1 ms
+2021-03-12 16:37:21,274 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:37:21,274 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:37:21,275 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:37:21,276 INFO c.e.c.CustomErrorController [http-nio-8000-exec-1] httpStatus:404 NOT_FOUND
+2021-03-12 16:37:21,276 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:37:58,438 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-55] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:37:58,507 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DemoApplication using Java 15.0.1 on DESKTOP-9Q3F4IE with PID 6820 (C:\Users\이종욱\OneDrive\문서\workspace\demo\target\classes started by 이종욱 in C:\Users\이종욱\OneDrive\문서\workspace\demo)
+2021-03-12 16:37:58,508 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 16:37:58,624 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$63b667c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-12 16:37:58,625 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-03-12 16:37:58,646 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2021-03-12 16:37:58,647 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:37:58,647 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 16:37:58,647 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 16:37:58,691 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-03-12 16:37:58,692 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 16:37:58,693 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 183 ms
+2021-03-12 16:37:58,737 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:37:58,774 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 16:37:58,780 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:37:58,783 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2021-03-12 16:37:58,786 INFO o.s.b.StartupInfoLogger [restartedMain] Started DemoApplication in 0.308 seconds (JVM running for 4448.809)
+2021-03-12 16:37:58,787 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 16:38:17,661 INFO o.a.j.l.DirectJDKLog [http-nio-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 16:38:17,661 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-12 16:38:17,662 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Completed initialization in 1 ms
+2021-03-12 16:38:17,663 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:38:17,663 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:38:17,663 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:38:17,664 INFO c.e.c.CustomErrorController [http-nio-8000-exec-1] httpStatus:404 NOT_FOUND
+2021-03-12 16:38:17,664 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:40:01,935 INFO c.e.i.MyInterceptor [http-nio-8000-exec-5] Interceptor preHandle
+2021-03-12 16:40:01,936 INFO c.e.i.MyInterceptor [http-nio-8000-exec-5] Interceptor postHandle
+2021-03-12 16:40:01,936 INFO c.e.i.MyInterceptor [http-nio-8000-exec-5] Interceptor preHandle
+2021-03-12 16:40:01,936 INFO c.e.c.CustomErrorController [http-nio-8000-exec-5] httpStatus:404 NOT_FOUND
+2021-03-12 16:40:01,936 INFO c.e.i.MyInterceptor [http-nio-8000-exec-5] Interceptor postHandle
+2021-03-12 16:40:08,049 INFO c.e.i.MyInterceptor [http-nio-8000-exec-7] Interceptor preHandle
+2021-03-12 16:40:08,049 INFO c.e.i.MyInterceptor [http-nio-8000-exec-7] Interceptor postHandle
+2021-03-12 16:40:08,050 INFO c.e.i.MyInterceptor [http-nio-8000-exec-7] Interceptor preHandle
+2021-03-12 16:40:08,051 INFO c.e.i.MyInterceptor [http-nio-8000-exec-7] Interceptor postHandle
+2021-03-12 16:40:08,074 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor preHandle
+2021-03-12 16:40:08,075 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor postHandle
+2021-03-12 16:40:08,103 INFO c.e.i.MyInterceptor [http-nio-8000-exec-6] Interceptor preHandle
+2021-03-12 16:40:08,104 INFO c.z.h.HikariDataSource [http-nio-8000-exec-6] HikariPool-3 - Starting...
+2021-03-12 16:40:08,133 INFO c.z.h.HikariDataSource [http-nio-8000-exec-6] HikariPool-3 - Start completed.
+2021-03-12 16:40:08,137 INFO c.e.c.BoardController [http-nio-8000-exec-6] GET /INFO : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
+2021-03-12 16:40:08,137 WARN c.e.c.BoardController [http-nio-8000-exec-6] GET /WARN : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
+2021-03-12 16:40:08,138 INFO c.e.i.MyInterceptor [http-nio-8000-exec-6] Interceptor postHandle
+2021-03-12 16:42:23,950 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-60] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:42:23,950 INFO c.z.h.HikariDataSource [Thread-60] HikariPool-3 - Shutdown initiated...
+2021-03-12 16:42:23,951 INFO c.z.h.HikariDataSource [Thread-60] HikariPool-3 - Shutdown completed.
+2021-03-12 16:42:24,024 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DemoApplication using Java 15.0.1 on DESKTOP-9Q3F4IE with PID 6820 (C:\Users\이종욱\OneDrive\문서\workspace\demo\target\classes started by 이종욱 in C:\Users\이종욱\OneDrive\문서\workspace\demo)
+2021-03-12 16:42:24,025 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 16:42:24,144 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$63b667c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-12 16:42:24,144 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-03-12 16:42:24,165 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2021-03-12 16:42:24,165 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:42:24,165 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 16:42:24,166 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 16:42:24,224 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-03-12 16:42:24,228 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 16:42:24,228 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 202 ms
+2021-03-12 16:42:24,275 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:42:24,316 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 16:42:24,322 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:42:24,325 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2021-03-12 16:42:24,328 INFO o.s.b.StartupInfoLogger [restartedMain] Started DemoApplication in 0.333 seconds (JVM running for 4714.351)
+2021-03-12 16:42:24,329 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 16:42:28,094 INFO o.a.j.l.DirectJDKLog [http-nio-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 16:42:28,094 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-12 16:42:28,095 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Completed initialization in 1 ms
+2021-03-12 16:42:28,095 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:42:28,096 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:42:28,097 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:42:28,097 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:42:28,158 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor preHandle
+2021-03-12 16:42:28,158 INFO c.z.h.HikariDataSource [http-nio-8000-exec-2] HikariPool-4 - Starting...
+2021-03-12 16:42:28,190 INFO c.z.h.HikariDataSource [http-nio-8000-exec-2] HikariPool-4 - Start completed.
+2021-03-12 16:42:28,192 INFO c.e.c.BoardController [http-nio-8000-exec-2] GET /INFO : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
+2021-03-12 16:42:28,192 WARN c.e.c.BoardController [http-nio-8000-exec-2] GET /WARN : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
+2021-03-12 16:42:28,193 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor postHandle
+2021-03-12 16:43:10,446 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-66] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:43:10,446 INFO c.z.h.HikariDataSource [Thread-66] HikariPool-4 - Shutdown initiated...
+2021-03-12 16:43:10,447 INFO c.z.h.HikariDataSource [Thread-66] HikariPool-4 - Shutdown completed.
+2021-03-12 16:43:10,517 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DemoApplication using Java 15.0.1 on DESKTOP-9Q3F4IE with PID 6820 (C:\Users\이종욱\OneDrive\문서\workspace\demo\target\classes started by 이종욱 in C:\Users\이종욱\OneDrive\문서\workspace\demo)
+2021-03-12 16:43:10,518 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 16:43:10,633 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$63b667c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-12 16:43:10,634 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-03-12 16:43:10,653 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2021-03-12 16:43:10,654 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:43:10,654 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 16:43:10,654 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 16:43:10,696 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-03-12 16:43:10,697 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 16:43:10,697 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 178 ms
+2021-03-12 16:43:10,743 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:43:10,780 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 16:43:10,785 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:43:10,788 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2021-03-12 16:43:10,790 INFO o.s.b.StartupInfoLogger [restartedMain] Started DemoApplication in 0.301 seconds (JVM running for 4760.813)
+2021-03-12 16:43:10,791 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 16:54:12,501 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-72] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:54:12,578 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DemoApplication using Java 15.0.1 on DESKTOP-9Q3F4IE with PID 6820 (C:\Users\이종욱\OneDrive\문서\workspace\demo\target\classes started by 이종욱 in C:\Users\이종욱\OneDrive\문서\workspace\demo)
+2021-03-12 16:54:12,579 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 16:54:12,718 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$63b667c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-12 16:54:12,719 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-03-12 16:54:12,739 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2021-03-12 16:54:12,740 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:54:12,740 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 16:54:12,740 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 16:54:12,781 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-03-12 16:54:12,783 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 16:54:12,783 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 202 ms
+2021-03-12 16:54:12,830 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:54:12,867 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 16:54:12,873 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:54:12,876 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2021-03-12 16:54:12,878 INFO o.s.b.StartupInfoLogger [restartedMain] Started DemoApplication in 0.333 seconds (JVM running for 5422.901)
+2021-03-12 16:54:12,879 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 16:54:16,075 INFO o.a.j.l.DirectJDKLog [http-nio-8000-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 16:54:16,075 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-12 16:54:16,075 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-1] Completed initialization in 0 ms
+2021-03-12 16:54:16,075 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:54:16,076 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:54:16,077 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:54:16,077 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:54:16,110 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor preHandle
+2021-03-12 16:54:16,111 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor postHandle
+2021-03-12 16:54:16,138 INFO c.e.i.MyInterceptor [http-nio-8000-exec-3] Interceptor preHandle
+2021-03-12 16:54:16,139 INFO c.z.h.HikariDataSource [http-nio-8000-exec-3] HikariPool-5 - Starting...
+2021-03-12 16:54:16,170 INFO c.z.h.HikariDataSource [http-nio-8000-exec-3] HikariPool-5 - Start completed.
+2021-03-12 16:54:16,172 INFO c.e.c.BoardController [http-nio-8000-exec-3] GET /INFO : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
+2021-03-12 16:54:16,172 WARN c.e.c.BoardController [http-nio-8000-exec-3] GET /WARN : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
+2021-03-12 16:54:16,173 INFO c.e.i.MyInterceptor [http-nio-8000-exec-3] Interceptor postHandle
+2021-03-12 16:57:54,588 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-77] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:57:54,588 INFO c.z.h.HikariDataSource [Thread-77] HikariPool-5 - Shutdown initiated...
+2021-03-12 16:57:54,589 INFO c.z.h.HikariDataSource [Thread-77] HikariPool-5 - Shutdown completed.
+2021-03-12 16:57:54,664 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DemoApplication using Java 15.0.1 on DESKTOP-9Q3F4IE with PID 6820 (C:\Users\이종욱\OneDrive\문서\workspace\demo\target\classes started by 이종욱 in C:\Users\이종욱\OneDrive\문서\workspace\demo)
+2021-03-12 16:57:54,664 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 16:57:54,794 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$63b667c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-12 16:57:54,795 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-03-12 16:57:54,820 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2021-03-12 16:57:54,821 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:57:54,821 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 16:57:54,821 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 16:57:54,865 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-03-12 16:57:54,866 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 16:57:54,866 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 200 ms
+2021-03-12 16:57:54,932 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:57:55,004 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 16:57:55,010 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:57:55,014 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2021-03-12 16:57:55,017 INFO o.s.b.StartupInfoLogger [restartedMain] Started DemoApplication in 0.384 seconds (JVM running for 5645.04)
+2021-03-12 16:57:55,018 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-12 16:57:58,072 INFO o.a.j.l.DirectJDKLog [http-nio-8000-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-12 16:57:58,072 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-03-12 16:57:58,073 INFO o.s.w.s.FrameworkServlet [http-nio-8000-exec-2] Completed initialization in 1 ms
+2021-03-12 16:57:58,074 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor preHandle
+2021-03-12 16:57:58,074 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor postHandle
+2021-03-12 16:57:58,075 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor preHandle
+2021-03-12 16:57:58,076 INFO c.e.i.MyInterceptor [http-nio-8000-exec-2] Interceptor postHandle
+2021-03-12 16:57:58,135 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor preHandle
+2021-03-12 16:57:58,136 INFO c.z.h.HikariDataSource [http-nio-8000-exec-1] HikariPool-6 - Starting...
+2021-03-12 16:57:58,168 INFO c.z.h.HikariDataSource [http-nio-8000-exec-1] HikariPool-6 - Start completed.
+2021-03-12 16:57:58,170 INFO c.e.c.BoardController [http-nio-8000-exec-1] GET /INFO : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
+2021-03-12 16:57:58,170 WARN c.e.c.BoardController [http-nio-8000-exec-1] GET /WARN : [{"no": 1, "title": "안녕하세요", "comment": "좋은 아침입니다", "name": "이종욱", "date": "2021-03-07"}, {"no": 2, "title": "hi~!!", "comment": "have a nice day!", "name": "김진", "date": "2021-03-07"}, {"no": 3, "title": "안녕하십니까", "comment": "하루 잘 보내세요", "name": "이진", "date": "2021-03-08"}]
+2021-03-12 16:57:58,170 INFO c.e.i.MyInterceptor [http-nio-8000-exec-1] Interceptor postHandle
+2021-03-12 16:58:07,698 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-83] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:58:07,698 INFO c.z.h.HikariDataSource [Thread-83] HikariPool-6 - Shutdown initiated...
+2021-03-12 16:58:07,699 INFO c.z.h.HikariDataSource [Thread-83] HikariPool-6 - Shutdown completed.
+2021-03-12 16:58:07,771 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DemoApplication using Java 15.0.1 on DESKTOP-9Q3F4IE with PID 6820 (C:\Users\이종욱\OneDrive\문서\workspace\demo\target\classes started by 이종욱 in C:\Users\이종욱\OneDrive\문서\workspace\demo)
+2021-03-12 16:58:07,772 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 16:58:07,890 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$63b667c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-12 16:58:07,891 INFO o.s.w.s.a.s.AbstractAddressingEndpointMapping [restartedMain] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-03-12 16:58:07,910 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8000 (http)
+2021-03-12 16:58:07,910 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:58:07,911 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-03-12 16:58:07,911 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-12 16:58:07,950 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-03-12 16:58:07,951 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-12 16:58:07,951 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 178 ms
+2021-03-12 16:58:07,996 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-12 16:58:08,034 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-12 16:58:08,040 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8000"]
+2021-03-12 16:58:08,043 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8000 (http) with context path ''
+2021-03-12 16:58:08,045 INFO o.s.b.StartupInfoLogger [restartedMain] Started DemoApplication in 0.302 seconds (JVM running for 5658.068)
+2021-03-12 16:58:08,046 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged

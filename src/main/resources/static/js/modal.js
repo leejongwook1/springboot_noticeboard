@@ -2,14 +2,18 @@ let action = '';
 let url = '';
 let type = '';
 let no = 0;
+let header = {};
+header["Ajax"] = "true";
 
 document.addEventListener("DOMContentLoaded", function(){
+	
 	//게시판 출력
 	$.ajax({
 		url: '/boardJson',
 		type: 'GET',
 		datatype: 'json',
 		contentType: 'application/json',
+		headers: header,
 		success:function(data){
 			let json = JSON.parse(data);
 			

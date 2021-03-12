@@ -6,7 +6,7 @@
 			<PatternLayout pattern="%-5p: %c - %m%n" /> 
 		</Console> 
 		<RollingFile name="RollingFile" fileName="./location/log.log" 
-			filePattern="./location/$${date:yyyy-MM}/log-%d{-dd-MMMM-yyyy}-%i.log.gz">
+			filePattern="./location/$${date:yyyy-MM}/log-%d{-yyyy-MM-dd}-%i.log.gz">
 			<PatternLayout>
 				<pattern>%d %p %C{1.} [%t] %m%n</pattern>
 			</PatternLayout>
@@ -24,6 +24,6 @@
 			<AppenderRef ref="console" /> 
 			<AppenderRef ref="RollingFile" /> 
 		</Root>
-		<Logger name="com.example.controller" level="info"></Logger>
+		<Logger name="com.example.controller" level="debug"></Logger>
 	</Loggers> 
 </Configuration>
