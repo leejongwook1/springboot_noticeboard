@@ -2,25 +2,24 @@ let action = '';
 let url = '';
 let type = '';
 let no = 0;
-let header = {};
-header["Ajax"] = "true";
 
 document.addEventListener("DOMContentLoaded", function(){
 	
 	//게시판 출력
 	$.ajax({
-		url: '/boardJson',
+		url: '/board',
 		type: 'GET',
 		datatype: 'json',
 		contentType: 'application/json',
-		headers: header,
+		beforeSend: function(request){
+			request.setRequestHeader("Ajax", "true");
+		},
 		success:function(data){
-			let json = JSON.parse(data);
+			let json = data.responseVo;
+			console.log(data);
 			
-			if(json.length != 0){
+			if(data.status == "200"){
 				alert("게시판 데이터 받아오기 성공!!");
-				console.log(data);
-				console.log(json);
 				
 				let option = "";
 				let tr = "";
@@ -42,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function(){
 				$("#board tbody").append(tr);
 			} else{
 				alert("데이터가 없습니다!!");
-				console.log(data);
 			}
 		},
 		error:function(request, error){
@@ -56,31 +54,36 @@ document.addEventListener("DOMContentLoaded", function(){
 			$.ajax({
 				url: '/board/'+no,
 				type: 'GET',
+				beforeSend: function(request){
+					request.setRequestHeader("Ajax", "true");
+				},
 				success:function(data){
+					console.log(data);
+					
 					let tr="";
+					
+					let json = data.responseVo;
 				
-					if(data){
+					if(data.status == "200"){
 						alert("글 번호 불러오기 성공");
-						console.log(data);
 						
 						$("#board tbody").empty();
 						
 						console.log(no + " 클릭")
 						
 						tr += `<tr>`;
-						tr += `<td>${data.no}</td>`;
-						tr += `<td>${data.title}</td>`;
-						tr += `<td>${data.comment}</td>`;
-						tr += `<td>${data.name}</td>`;
-						tr += `<td>${data.date}</td>`;
-						tr += `<td><button name="update" value="${data.no}" class="btn btn-xs btn-warning">수정</button></td>`;
-						tr += `<td><button name="delete" value="${data.no}" class="btn btn-xs btn-danger">삭제</button></td>`;
+						tr += `<td>${json.no}</td>`;
+						tr += `<td>${json.title}</td>`;
+						tr += `<td>${json.comment}</td>`;
+						tr += `<td>${json.name}</td>`;
+						tr += `<td>${json.date}</td>`;
+						tr += `<td><button name="update" value="${json.no}" class="btn btn-xs btn-warning">수정</button></td>`;
+						tr += `<td><button name="delete" value="${json.no}" class="btn btn-xs btn-danger">삭제</button></td>`;
 						tr += `</tr>`;
 						
 						$("#board tbody").append(tr);
 					} else{
 						alert("글 번호 불러오기 실패");
-						console.log(data);
 					}
 				},
 				error:function(request, status, error){
@@ -148,14 +151,17 @@ document.addEventListener("DOMContentLoaded", function(){
 		$.ajax({
 			url:'/board/'+no,
 			type: 'DELETE',
+			beforeSend: function(request){
+				request.setRequestHeader("Ajax", "true");
+			},
 			success:function(data){
-				if(data==1){
+				console.log(data);
+				
+				if(data.status=="200"){
 					alert("삭제 성공");
-					console.log(data);
 					location.reload();
 				} else{
 					alert("삭제 실패");
-					console.log(data);
 				}
 			},
 			error:function(request, status, error){
@@ -164,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function(){
 		});
 	});
 	
-	//modal submit 버튼
+	//글 작성/수정 submit 버튼
 	$("#modalSubmit").click(function(){
 		url = '/board';
 		
@@ -197,14 +203,16 @@ document.addEventListener("DOMContentLoaded", function(){
 			data: JSON.stringify(data),
 			dataType: 'json',
 			contentType: 'application/json',
+			beforeSend: function(request){
+				request.setRequestHeader("Ajax", "true");
+			},
 			success:function(data){
-				if(data==1){
+				console.log(data);
+				if(data.status == "200"){
 					alert(`글 ${$("#modalSubmit").text()} 성공`);
-					console.log(data);
 					location.reload();
 				} else{
 					alert(`글 ${$("#modalSubmit").text()} 실패`);
-					console.log(data);
 				}
 			},
 			error:function(request, status, error){
@@ -214,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	});
 	
 	//tbody tr 생성함수
-	function printBoard(data, tr){
+	function printBoard(data, tr, key){
 		tr += `<tr>`;
 		tr += `<td>${data[key].no}</td>`;
 		tr += `<td>${data[key].title}</td>`;
