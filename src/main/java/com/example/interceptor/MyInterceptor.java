@@ -15,22 +15,27 @@ public class MyInterceptor implements HandlerInterceptor {
 			throws Exception {
 		log.info("Interceptor preHandle");
 
-		String ajax = request.getHeader("Ajax");
-		System.out.println(ajax);
 		String requestUrl = request.getRequestURL().toString();
+		System.out.println(requestUrl);
 
-		if (requestUrl.contains(".html") || requestUrl.contains(".js") || requestUrl.equals("http://localhost:8000/")) {
+		if (requestUrl.equals("http://localhost:8000/favicon.ico") || requestUrl.contains("/error")) {
 			System.out.println(requestUrl + "통과");
 			return true;
 		}
 
-		if (ajax.equals("true")) {
+		String ajax = request.getHeader("Ajax");
+		System.out.println(ajax);
+
+		if ("true".equals(ajax)) {
 			System.out.println("true");
 			return true;
-		} else {
-			System.out.println("false");
-			return false;
 		}
+		System.out.println("false");
+		// response.setHeader("Ajax", "true");
+		response.sendRedirect(request.getContextPath() + "/error1");
+		// response.sendError(404);
+		return false;
+
 	}
 
 	@Override

@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function(){
 			let json = data.responseVo;
 			console.log(data);
 			
-			if(data.status == "200"){
+			if(data.code == "200"){
 				alert("게시판 데이터 받아오기 성공!!");
 				
 				let option = "";
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function(){
 					
 					let json = data.responseVo;
 				
-					if(data.status == "200"){
+					if(data.code == "200"){
 						alert("글 번호 불러오기 성공");
 						
 						$("#board tbody").empty();
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function(){
 			success:function(data){
 				console.log(data);
 				
-				if(data.status=="200"){
+				if(data.code=="200"){
 					alert("삭제 성공");
 					location.reload();
 				} else{
@@ -208,7 +208,7 @@ document.addEventListener("DOMContentLoaded", function(){
 			},
 			success:function(data){
 				console.log(data);
-				if(data.status == "200"){
+				if(data.code == "200"){
 					alert(`글 ${$("#modalSubmit").text()} 성공`);
 					location.reload();
 				} else{

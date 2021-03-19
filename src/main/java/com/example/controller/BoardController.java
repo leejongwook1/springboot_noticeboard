@@ -3,6 +3,7 @@ package com.example.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,6 +19,11 @@ import lombok.extern.log4j.Log4j2;
 @RestController
 @Log4j2
 public class BoardController {
+	@Autowired
+	Environment env;
+
+	@Autowired
+	private ResponseVo responseVo;
 
 	@Autowired
 	private BoardService boardService;
@@ -46,81 +52,81 @@ public class BoardController {
 
 	@RequestMapping(value = "/board", method = RequestMethod.GET)
 	public ResponseVo showBoard() {
-		ResponseVo json = new ResponseVo();
+
 		List<BoardDto> resultBoards = boardService.findAll();
 
 		if (resultBoards.size() != 0) {
-			json.setResponseVo(resultBoards);
-			json.setStatus("200");
-			json.setMessage("OK");
+			responseVo.setResponseVo(resultBoards);
+			responseVo.setCode("200");
+			responseVo.setMessage(env.getProperty("code.200"));
 		} else {
-			json.setStatus("404");
-			json.setMessage("Not Found");
+			responseVo.setCode("500");
+			responseVo.setMessage(env.getProperty("code.500"));
 		}
-		return json;
+		return responseVo;
 	}
 
 	@RequestMapping(value = "/board/{no}", method = RequestMethod.GET)
 	public ResponseVo loadBoard(@RequestBody @PathVariable("no") int no) {
-		ResponseVo json = new ResponseVo();
+
 		BoardDto resultBoard = boardService.findByNo(no);
 
 		if (resultBoard != null) {
-			json.setResponseVo(resultBoard);
-			json.setStatus("200");
-			json.setMessage("OK");
+			responseVo.setResponseVo(resultBoard);
+			responseVo.setCode("200");
+			responseVo.setMessage(env.getProperty("code.200"));
 		} else {
-			json.setStatus("404");
-			json.setMessage("Not Found");
+			responseVo.setCode("500");
+			responseVo.setMessage(env.getProperty("code.500"));
 		}
-		return json;
+		return responseVo;
 	}
 
 	@RequestMapping(value = "/board", method = RequestMethod.POST)
 	public ResponseVo create(@RequestBody BoardDto board) {
-		ResponseVo json = new ResponseVo();
+
 		int resultNum = boardService.insert(board);
 
 		if (resultNum != 0) {
-			json.setResponseVo(resultNum);
-			json.setStatus("200");
-			json.setMessage("OK");
+			responseVo.setResponseVo(resultNum);
+			responseVo.setCode("200");
+			responseVo.setMessage(env.getProperty("code.200"));
 		} else {
-			json.setStatus("404");
-			json.setMessage("Not Found");
+			responseVo.setCode("500");
+			responseVo.setMessage(env.getProperty("code.500"));
 		}
-		return json;
+		return responseVo;
 	}
 
 	@RequestMapping(value = "/board", method = RequestMethod.PUT)
 	public ResponseVo update(@RequestBody BoardDto board) {
-		ResponseVo json = new ResponseVo();
+
 		int resultNum = boardService.update(board);
 
 		if (resultNum != 0) {
-			json.setResponseVo(resultNum);
-			json.setStatus("200");
-			json.setMessage("OK");
+			responseVo.setResponseVo(resultNum);
+			responseVo.setCode("200");
+			responseVo.setMessage(env.getProperty("code.200"));
 		} else {
-			json.setStatus("404");
-			json.setMessage("Not Found");
+			responseVo.setCode("500");
+			responseVo.setMessage(env.getProperty("code.500"));
 		}
-		return json;
+		return responseVo;
 	}
 
 	@RequestMapping(value = "/board/{no}", method = RequestMethod.DELETE)
 	public ResponseVo delete(@RequestBody @PathVariable("no") int no) {
-		ResponseVo json = new ResponseVo();
+
 		int resultNum = boardService.delete(no);
 
 		if (resultNum != 0) {
-			json.setResponseVo(resultNum);
-			json.setStatus("200");
-			json.setMessage("OK");
+			responseVo.setResponseVo(resultNum);
+			responseVo.setCode("200");
+			responseVo.setMessage(env.getProperty("code.200"));
 		} else {
-			json.setStatus("404");
-			json.setMessage("Not Found");
+			responseVo.setCode("500");
+			responseVo.setMessage(env.getProperty("code.500"));
 		}
-		return json;
+		return responseVo;
 	}
 }
